@@ -1,5 +1,5 @@
-#ifndef MONGO_SUBSCRIBE_CONTEXT_AVAILABILITY_H
-#define MONGO_SUBSCRIBE_CONTEXT_AVAILABILITY_H
+#ifndef SRC_LIB_MONGOBACKEND_MONGOSUBSCRIBECONTEXTAVAILABILITY_H_
+#define SRC_LIB_MONGOBACKEND_MONGOSUBSCRIBECONTEXTAVAILABILITY_H_
 
 /*
 *
@@ -40,11 +40,11 @@
 */
 extern HttpStatusCode mongoSubscribeContextAvailability
 (
-  SubscribeContextAvailabilityRequest*   requestP,
-  SubscribeContextAvailabilityResponse*  responseP,
-  std::map<std::string, std::string>&    uriParam,
-  const std::string&                     fiwareCorrelator = "no correlator",
-  const std::string&                     tenant           = ""
+  SubscribeContextAvailabilityRequest*       requestP,
+  SubscribeContextAvailabilityResponse*      responseP,
+  const std::map<std::string, std::string>&  uriParam,
+  const std::string&                         fiwareCorrelator = "no correlator",
+  const std::string&                         tenant           = ""
 );
 
-#endif
+#endif  // SRC_LIB_MONGOBACKEND_MONGOSUBSCRIBECONTEXTAVAILABILITY_H_
